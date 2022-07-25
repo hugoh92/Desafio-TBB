@@ -1,0 +1,167 @@
+footer{ //personalizando footer bar
+    height: 242px;
+    background: var(--unnamed-color-389cd6) 0% 0% no-repeat padding-box;
+    background: #389CD6 0% 0% no-repeat padding-box;
+    top: 0px;
+    left: 0px;
+    min-width: 400px;
+    opacity: 1;
+}
+
+.footer-infos{
+    height: 88px;
+}
+
+.footer-icons{
+    height: 154px;
+    display: flex;
+}
+
+.logo-size{
+  width: 116px;
+  height: 29px;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+}
+
+.logo-icon{
+  width: 50%;
+  height: 154px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #389CD6;
+  display: grid;
+}
+
+.insta-size{
+  width: 43px;
+  height: 43px;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.insta-icon{
+  width: 50%;
+  height: 154px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #389CD6;
+  display: grid;
+  }
+
+.btn-group{
+  display: flex;
+  background-color: #389CD6;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 41px;
+}
+
+.bt-infos-style{
+  height: 47px;
+  opacity: 1;
+  background-color: #389CD6;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-trebuchet-ms);
+  letter-spacing: var(--unnamed-character-spacing-0-32);
+  color: var(--white);
+  text-align: center;
+  font: normal normal bold 16px/22px Trebuchet MS;
+  letter-spacing: 0.32px;
+  color: #FFFFFF;
+  border-bottom: none;
+  border-top: none;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-image: linear-gradient(to bottom, rgba(0,0,0,0) 25%,rgb(255, 255, 255) 25%,rgb(255, 255, 255) 75%,rgba(221, 0, 0, 0) 75%);
+  border-image-slice: 1;
+}
+
+.rem-border-rg{
+  border-right:none;
+}
+.rem-border{
+  border-left:none;
+}
+//personalizando tam dos buttons
+.contact-bt{
+  width: 128px;
+}
+
+.faq-bt{
+  width: 72px;
+}
+
+.map-bt{
+  width: 114px;
+}
+
+.privacy-bt{
+  width: 156px;
+}
+
+.cookies-bt{
+  width: 158px;
+}
+
+.legal-bt{
+  width: 138px;
+}
+
+@media only screen and (max-width:768px) { //Resposividade para telas menores de 768px tablet
+    footer{
+      height: 756px;
+    }
+    .footer-infos{
+      height: 442px;
+    }
+
+    .footer-icons{
+      height: 154px;
+      display: grid;
+    }
+
+    .insta-icon{
+      width: 100%;
+    }
+
+    .logo-icon{
+      width: 100%;
+    }
+
+    .btn-group{
+      display: grid;
+      background-color: #389CD6;
+      top: 5px;
+    }
+
+    .bt-infos-style{
+      width: 156px;
+      height: 73px;
+      opacity: 1;
+      font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-trebuchet-ms);
+      letter-spacing: var(--unnamed-character-spacing-0-32);
+      color: var(--white);
+      text-align: center;
+      font: normal normal bold 16px/22px Trebuchet MS;
+      letter-spacing: 0.32px;
+      color: #FFFFFF;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid #FFFFFF !important;
+      border-top: 1px solid #FFFFFF !important;
+      border-image: linear-gradient(to left, rgba(0,0,0,0) 25%,rgb(255, 255, 255) 25%,rgb(255, 255, 255) 75%,rgba(221, 0, 0, 0) 75%);
+      border-image-slice: 1;
+     
+    }
+    .rem-border-rg{
+      border-bottom:none !important;
+      
+    }
+    .rem-border{
+      border-top:none !important;
+    }
+}

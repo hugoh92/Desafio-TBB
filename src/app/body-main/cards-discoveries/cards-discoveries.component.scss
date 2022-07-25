@@ -1,0 +1,114 @@
+//CARDS INFO
+.cards-info{
+    width: 356px;
+    height: 355px;
+    /* UI Properties */
+    background: var(--white) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 16px #00000014;
+    border-radius: 16px;
+    opacity: 1;
+    margin:0 15.5px 0 15.5px;
+}
+.card-info-img{
+    width: 357px;
+    height: 232px;
+    background: transparent 0% 0% no-repeat padding-box;
+    border-radius: 16px 16px 0px 0px;
+    opacity: 1;
+}
+.card-text{
+    height: 107px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.font-card-info-text{
+    width: 292px;
+    height: 51px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-28) var(--unnamed-font-family-trebuchet-ms);
+    letter-spacing: var(--unnamed-character-spacing-0-4);
+    color: var(--dark-gray);
+    text-align: left;
+    font: normal normal normal 20px/28px Trebuchet MS;
+    letter-spacing: 0.4px;
+    color: #7B7070;
+    opacity: 1;
+    margin: auto;
+    
+}
+.container-cards-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin: 80px auto;
+    
+}
+.slider {
+    width: 410px;
+    height: 370px;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;  
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    display: flex;
+    margin: 80px auto;
+    display: none;
+    background-color: #FFFFFF;
+}
+  
+.slide {
+    //width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+    display: flex;
+    width: 356px;
+    height: 355px;
+}
+.slider::-webkit-scrollbar-track {
+    background: transparent;
+}
+.slider::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+}
+.slider::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd42;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:1160px) {
+    .container-cards-info{
+        display: none;
+    }
+    .cards-info{
+        margin:0 ;
+    }
+    .slide {
+       margin-left: 16px;
+      }
+    .slider{
+        display: block;
+    }
+    .slider {
+        width: 100%;
+        max-width: 1000px;
+        min-width: 100px;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:428px) {
+    .slider::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+    .slider {
+        width: 410px;
+        height: 370px;
+    }
+}

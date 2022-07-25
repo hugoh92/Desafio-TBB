@@ -1,0 +1,150 @@
+//cards
+.container-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin: 80px auto;
+    //margin-top: 80px;
+}
+.cards{
+    width: 356px;
+    height: 531px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 16px #00000014;
+    border-radius: 16px;
+    opacity: 1;
+    margin:0 16.5px 0 16.5px;
+}
+
+.card-img{
+    top: 2008px;
+    left: 488px;
+    width: 166px;
+    height: 351px;
+    background: transparent  0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.footer-card{
+    width: 356px;
+    height: 73px;
+    background: var(--unnamed-color-389cd6) 0% 0% no-repeat padding-box;
+    background: #389CD6 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 16px 16px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card-text{
+    height: 107px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.font-card-text{
+    width: 292px;
+    height: 51px;
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-28) var(--unnamed-font-family-trebuchet-ms);
+    letter-spacing: var(--unnamed-character-spacing-0-4);
+    color: var(--dark-gray);
+    text-align: center;
+    font: normal normal normal 20px/28px Trebuchet MS;
+    letter-spacing: 0.4px;
+    color: #7B7070;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+.card-green{
+    background: #309D5F 0% 0% no-repeat padding-box !important;
+}
+
+.card-red{
+    background: #EE6381 0% 0% no-repeat padding-box !important;
+}
+.font-card-title{
+    width: 312px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-25)/var(--unnamed-line-spacing-36) var(--unnamed-font-family-trebuchet-ms);
+    letter-spacing: var(--unnamed-character-spacing-0-5);
+    color: var(--white);
+    text-align: center;
+    font: normal normal bold 25px/36px Trebuchet MS;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    text-transform: lowercase;
+    opacity: 1; 
+    margin: auto;
+}
+
+.slider {
+    width: 408px;
+    height: 550px;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;  
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    display: flex;
+    margin: 80px auto;
+    background-color: #FFFFFF;
+    display: none;
+}
+  
+.slide {
+    //width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+    display: flex;
+    width: 356px;
+    height: 355px;
+}
+.slider::-webkit-scrollbar-track {
+    background: transparent;
+}
+.slider::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+}
+.slider::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd42;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:1160px) {
+    .container-cards{
+        display: none;
+    }
+    .cards{
+        margin:0 ;
+    }
+    .slide {
+       margin-left: 16px;
+      }
+    .slider{
+        display: block;
+    }
+    .slider {
+        width: 100%;
+        max-width: 1000px;
+        min-width: 100px;
+    }
+}
+
+@media only screen and (max-width:428px) {
+    .slider::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+    .slider {
+        width: 410px;
+        height: 550px;
+    }
+}
