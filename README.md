@@ -1,7 +1,9 @@
 # DesafioTBB
 
 Necessário ter instalado Nodejs, para instalação seguir o passo a passo neste link https://nodejs.org/pt-br/download/
+
 Instalar Angular utilizando o comando "npm install -g @angular/cli" https://angular.io/cli
+
 Para inicializar o projeto, dentro da pasta do projeto rodar o comando "ng serve" e navegar na página `http://localhost:4200/`.
 
 
